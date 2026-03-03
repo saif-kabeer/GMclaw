@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-bg text-white antialiased;
+  background-image: radial-gradient(circle at 20% 0%, rgba(127, 90, 240, 0.08), transparent 45%),
+    radial-gradient(circle at 80% 10%, rgba(14, 165, 233, 0.08), transparent 40%);
+}
+
+.card {
+  @apply rounded-lg border border-line bg-panel;
+}
+
+.badge {
+  @apply rounded-md border border-line bg-black/20 px-2 py-0.5 text-xs text-muted;
+}
